@@ -33,7 +33,7 @@
  * @license    http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @version    Release: @package_version@
  * @see        Stagehand_HTTP_StatusTest
- * @since      File available since Release 0.1.0
+ * @since      File available since Release 1.0.0
  */
 
 // {{{ Stagehand_HTTP_StatusTest_MockStatus
@@ -46,7 +46,7 @@
  * @license    http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @version    Release: @package_version@
  * @see        Stagehand_HTTP_StatusTest
- * @since      Class available since Release 0.1.0
+ * @since      Class available since Release 1.0.0
  */
 class Stagehand_HTTP_StatusTest_MockStatus extends Stagehand_HTTP_Status
 {

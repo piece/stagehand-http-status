@@ -32,7 +32,7 @@
  * @copyright  2009 KUBO Atsuhiro <kubo@iteman.jp>
  * @license    http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @version    Release: @package_version@
- * @since      File available since Release 0.1.0
+ * @since      File available since Release 1.0.0
  */
 
 require_once 'PEAR/PackageFileManager2.php';
@@ -40,11 +40,11 @@ require_once 'PEAR.php';
 
 PEAR::staticPushErrorHandling(PEAR_ERROR_CALLBACK, create_function('$error', 'var_dump($error); exit();'));
 
-$releaseVersion = '0.1.0';
-$releaseStability = 'beta';
-$apiVersion = '0.1.0';
-$apiStability = 'beta';
-$notes = 'The first beta release of Stagehand_HTTP_Status.';
+$releaseVersion = '1.0.0';
+$releaseStability = 'stable';
+$apiVersion = '1.0.0';
+$apiStability = 'stable';
+$notes = 'The first stable release of Stagehand_HTTP_Status.';
 
 $package = new PEAR_PackageFileManager2();
 $package->setOptions(array('filelistgenerator' => 'file',

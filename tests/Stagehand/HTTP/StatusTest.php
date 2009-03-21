@@ -32,7 +32,7 @@
  * @copyright  2009 KUBO Atsuhiro <kubo@iteman.jp>
  * @license    http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @version    Release: @package_version@
- * @since      File available since Release 0.1.0
+ * @since      File available since Release 1.0.0
  */
 
 // {{{ Stagehand_HTTP_StatusTest
@@ -44,7 +44,7 @@
  * @copyright  2009 KUBO Atsuhiro <kubo@iteman.jp>
  * @license    http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @version    Release: @package_version@
- * @since      Class available since Release 0.1.0
+ * @since      Class available since Release 1.0.0
  */
 class Stagehand_HTTP_StatusTest extends PHPUnit_Framework_TestCase
 {
