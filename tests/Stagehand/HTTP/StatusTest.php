@@ -79,12 +79,12 @@ class Stagehand_HTTP_StatusTest extends PHPUnit_Framework_TestCase
     public function sendStatusLine()
     {
         $_SERVER['SERVER_PROTOCOL'] = 'HTTP/1.1';
-        $httpStatus = new Stagehand_HTTP_StatusTest_MockStatus(404);
-        $httpStatus->send();
+        Stagehand_HTTP_Status::send(404);
 
-        $this->assertEquals('HTTP/1.1 404 Not Found',
-                            $this->readAttribute($httpStatus, '_sentStatusLine')
-                            );
+        $this->assertAttributeEquals('HTTP/1.1 404 Not Found',
+                                     '_sentStatusLine',
+                                     'Stagehand_HTTP_Status'
+                                     );
     }
 
     /**
@@ -94,7 +94,7 @@ class Stagehand_HTTP_StatusTest extends PHPUnit_Framework_TestCase
     public function raiseAnExceptionIfAnUnknownStatusCodeIsGiven()
     {
         $_SERVER['SERVER_PROTOCOL'] = 'HTTP/1.1';
-        new Stagehand_HTTP_Status(32);
+        Stagehand_HTTP_Status::send(32);
     }
 
     /**#@-*/
