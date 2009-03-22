@@ -13,18 +13,22 @@
   <email>kubo@iteman.jp</email>
   <active>yes</active>
  </lead>
- <date>2009-03-21</date>
- <time>16:44:18</time>
+ <date>2009-03-22</date>
+ <time>22:13:40</time>
  <version>
-  <release>1.0.0</release>
-  <api>1.0.0</api>
+  <release>1.1.0</release>
+  <api>1.1.0</api>
  </version>
  <stability>
   <release>stable</release>
   <api>stable</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
- <notes>The first stable release of Stagehand_HTTP_Status.</notes>
+ <notes>A new release of Stagehand_HTTP_Status is now available.
+
+What&apos;s New in Stagehand_HTTP_Status 1.1.0
+
+ * API changes: Stagehand_HTTP_Status::send() has been changed to static method and so as to receive the status code as an argument.</notes>
  <contents>
   <dir baseinstalldir="/" name="/">
    <dir name="doc">
@@ -49,11 +53,6 @@
    <dir name="tests">
     <dir name="Stagehand">
      <dir name="HTTP">
-      <dir name="StatusTest">
-       <file name="MockStatus.php" role="test">
-        <tasks:replace from="@package_version@" to="version" type="package-info" />
-       </file>
-      </dir> <!-- /tests/Stagehand/HTTP/StatusTest -->
       <file name="StatusTest.php" role="test">
        <tasks:replace from="@package_version@" to="version" type="package-info" />
       </file>
@@ -77,6 +76,23 @@
  </dependencies>
  <phprelease />
  <changelog>
+  <release>
+   <version>
+    <release>1.1.0</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-03-22</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>A new release of Stagehand_HTTP_Status is now available.
+
+What&apos;s New in Stagehand_HTTP_Status 1.1.0
+
+ * API changes: Stagehand_HTTP_Status::send() has been changed to static method and so as to receive the status code as an argument.</notes>
+  </release>
   <release>
    <version>
     <release>1.0.0</release>

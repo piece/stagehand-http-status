@@ -40,11 +40,15 @@ require_once 'PEAR.php';
 
 PEAR::staticPushErrorHandling(PEAR_ERROR_CALLBACK, create_function('$error', 'var_dump($error); exit();'));
 
-$releaseVersion = '1.0.0';
+$releaseVersion = '1.1.0';
 $releaseStability = 'stable';
-$apiVersion = '1.0.0';
+$apiVersion = '1.1.0';
 $apiStability = 'stable';
-$notes = 'The first stable release of Stagehand_HTTP_Status.';
+$notes = 'A new release of Stagehand_HTTP_Status is now available.
+
+What\'s New in Stagehand_HTTP_Status 1.1.0
+
+ * API changes: Stagehand_HTTP_Status::send() has been changed to static method and so as to receive the status code as an argument.';
 
 $package = new PEAR_PackageFileManager2();
 $package->setOptions(array('filelistgenerator' => 'file',
